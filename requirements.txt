@@ -1,0 +1,7 @@
+pytest
+selenium==3.141.0
+PyYAML==3.13
+requests
+pypcom
+pytest-parallel
+zebrunnerpy==0.1.2.4
