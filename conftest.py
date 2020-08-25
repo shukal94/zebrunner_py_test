@@ -6,12 +6,11 @@ from zebrunnerpy import connector_obj, PyTestZafiraListener
 
 from src.common.logging_config import apply_initial_logging_configuration
 
-apply_initial_logging_configuration()
-
 
 pytest_plugins = ['zebrunnerpy.plugin']
 is_zafira_plugged_in = True
 connector_obj.pytest_listener = PyTestZafiraListener(connector_obj.state)
+apply_initial_logging_configuration()
 
 
 def pytest_configure(config):
