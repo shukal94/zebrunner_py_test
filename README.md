@@ -1,6 +1,6 @@
 # Zebrunner pytest agent test repository
 ## Prerequisites
-1. python 3.8+
+1. python 3.6+
 2. pip
 3. virtualenv
 4. pytest
