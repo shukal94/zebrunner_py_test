@@ -43,12 +43,13 @@ update your config `zafira_properties.ini` with the corresponding options
 service_url = base URL of your Zebrunner tenant
 zafira_enabled = True or False
 access_token = refresh token you got from zebrunner user settings
-job_name = any String (mocked yet, will add this capability soon)
-artifact_expires_in_default_time = any Integer (mocked yet, will add this capability soon)
-artifact_log_name = any String (mocked yet, will add this capability soon)
-aws_screen_shot_bucket = any String (mocked yet, will add this capability soon)
-s3_save_screenshots = any String (mocked yet, will add this capability soon)
-zafira_project = any String (mocked yet, will add this capability soon)
+driver_instance_name = driver (name of your driver instance - needed for screenshoting)
+suite = test suite name (any String)
+build = build number (any String)
+env = run environment (any String)
+test_owners = sshukalovich,dmishin,test1 - list of real usernames of your tenant
+test_run_artifact = jenkins-log.log (any Path)
+test_run_artifact_url = https://ci.organization.org/pipelines/jenkins-log-20200828.tar.gz (any Url)
 ```
 define the test maintainers at `pytest.ini`
 ```
@@ -69,5 +70,6 @@ ensure you have pytest as the default testrunner on your IDE and working directo
 start selenium server, the props and capabilities you can find at `gui_properties.ini`
 
 That's it!
+
 ##USAGE
 just run your tests
