@@ -5,4 +5,4 @@ PyYAML==3.13
 requests
 pypcom
 pytest-parallel
-zebrunnerpy==0.4
+zebrunnerpy==0.6
